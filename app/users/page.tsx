@@ -2,6 +2,7 @@ import { NextPage } from 'next';
 import { getAllUsers } from '../util/api/user.api';
 import { User } from '../util/types/user';
 import { errorExtractor } from '../util/errorExtractor';
+import Link from 'next/link';
 
 const UsersPage: NextPage = async () => {
   let users: User[] = [];
@@ -19,7 +20,9 @@ const UsersPage: NextPage = async () => {
       {users.length > 0 && (
         <ul>
           {users.map((user) => (
-            <li key={user.id}>{user.name}</li>
+            <li key={user.id}>
+              {user.name} <Link href={`/users/${user.id}`}>Details</Link>
+            </li>
           ))}
         </ul>
       )}
