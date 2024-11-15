@@ -32,7 +32,7 @@ const UsersPage: NextPage = async () => {
         </ul>
       )}
 
-      <Link href={'/users/2'}>Test</Link>
+      <Link href="/users/form">create</Link>
     </div>
   );
 };

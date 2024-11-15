@@ -1,16 +1,6 @@
 {
   "books": [
     {
-      "id": "1",
-      "isbn": "978-3-16-148410-0",
-      "title": "To Kill a Mockingbird",
-      "author": "Harper Lee",
-      "release": "1960-07-11T00:00:00.000Z",
-      "pages": 281,
-      "language": "English",
-      "rating": 5
-    },
-    {
       "id": "2",
       "isbn": "978-0-7432-7356-5",
       "title": "1984",
@@ -158,9 +148,14 @@
       "email": "john.doe@example.com"
     },
     {
-      "id": "3",
-      "name": "Alice Johnson",
-      "email": "alice.johnson@example.com"
+      "id": "ae2f",
+      "name": "Mickey",
+      "email": "mouse@disney.de"
+    },
+    {
+      "id": "7019",
+      "name": "Peter",
+      "email": "peter@example.com"
     }
   ]
 }
