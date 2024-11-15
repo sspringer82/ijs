@@ -20,3 +20,7 @@ npm install json-server
   }
 }
 ```
+
+# Start the app
+1. Backend: `npm run backend`
+2. Next.js: `npm run dev`
