@@ -4,6 +4,8 @@ import { User } from '../util/types/user';
 import { errorExtractor } from '../util/errorExtractor';
 import Link from 'next/link';
 import Delete from './components/delete';
+import Button from '@/components/Button';
+import { deleteUser } from '../actions/user';
 
 const UsersPage: NextPage = async () => {
   let users: User[] = [];
@@ -13,6 +15,11 @@ const UsersPage: NextPage = async () => {
   } catch (error) {
     errorMessage = errorExtractor(error);
   }
+
+  async function doIt(id: string) {
+    'use server';
+  }
+
   return (
     <div>
       <h1>User List</h1>
@@ -26,7 +33,7 @@ const UsersPage: NextPage = async () => {
               <Link href={`/users/${user.id}`} prefetch={false}>
                 Details
               </Link>
-              <Delete id={user.id} />
+              <Button title="delete" id={user.id} handleClick={deleteUser} />
             </li>
           ))}
         </ul>
