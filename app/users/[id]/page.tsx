@@ -1,3 +1,4 @@
+import { getUserById } from '@/app/util/api/user.api';
 import { NextPage } from 'next';
 
 type Props = {
@@ -8,9 +9,10 @@ type Props = {
 
 const DetailPage: NextPage<Props> = async ({ params }) => {
   const { id } = await params;
+  const user = await getUserById(id);
   return (
     <div>
-      <h1>Detail Page for {id}</h1>
+      <h1>Detail Page for {user.name}</h1>
     </div>
   );
 };

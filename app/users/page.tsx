@@ -3,6 +3,7 @@ import { getAllUsers } from '../util/api/user.api';
 import { User } from '../util/types/user';
 import { errorExtractor } from '../util/errorExtractor';
 import Link from 'next/link';
+import Delete from './components/delete';
 
 const UsersPage: NextPage = async () => {
   let users: User[] = [];
@@ -25,10 +26,13 @@ const UsersPage: NextPage = async () => {
               <Link href={`/users/${user.id}`} prefetch={false}>
                 Details
               </Link>
+              <Delete id={user.id} />
             </li>
           ))}
         </ul>
       )}
+
+      <Link href={'/users/2'}>Test</Link>
     </div>
   );
 };
