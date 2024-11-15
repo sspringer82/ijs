@@ -16,3 +16,7 @@ const DetailPage: NextPage<Props> = async ({ params }) => {
 };
 
 export default DetailPage;
+
+export async function generateStaticParams() {
+  return [{ id: '1' }, { id: '3' }];
+}

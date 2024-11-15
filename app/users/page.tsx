@@ -21,7 +21,10 @@ const UsersPage: NextPage = async () => {
         <ul>
           {users.map((user) => (
             <li key={user.id}>
-              {user.name} <Link href={`/users/${user.id}`}>Details</Link>
+              {user.name}{' '}
+              <Link href={`/users/${user.id}`} prefetch={false}>
+                Details
+              </Link>
             </li>
           ))}
         </ul>
