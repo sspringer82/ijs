@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import { Book } from '@/app/util/types/Book';
 import { getAllBooks } from '@/app/util/api/book';
+import Link from 'next/link';
 
 const BooksListPage: NextPage = async () => {
   let books: Book[] = [];
@@ -28,6 +29,7 @@ const BooksListPage: NextPage = async () => {
               <th>Pages</th>
               <th>Language</th>
               <th>Rating</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
@@ -41,6 +43,9 @@ const BooksListPage: NextPage = async () => {
                 <td>{book.pages}</td>
                 <td>{book.language}</td>
                 <td>{book.rating}</td>
+                <td>
+                  <Link href={`/books/${book.id}`}>Details</Link>
+                </td>
               </tr>
             ))}
           </tbody>
