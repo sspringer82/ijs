@@ -3,7 +3,6 @@ import { getAllUsers } from '../util/api/user.api';
 import { User } from '../util/types/user';
 import { errorExtractor } from '../util/errorExtractor';
 import Link from 'next/link';
-import Delete from './components/delete';
 import Button from '@/components/Button';
 import { deleteUser } from '../actions/user';
 
@@ -14,10 +13,6 @@ const UsersPage: NextPage = async () => {
     users = await getAllUsers();
   } catch (error) {
     errorMessage = errorExtractor(error);
-  }
-
-  async function doIt(id: string) {
-    'use server';
   }
 
   return (

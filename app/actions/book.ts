@@ -3,7 +3,6 @@
 import { revalidatePath } from 'next/cache';
 import { errorExtractor } from '../util/errorExtractor';
 import { redirect } from 'next/navigation';
-import { release } from 'os';
 
 export async function deleteBook(id: string): Promise<void> {
   const response = await fetch(`http://localhost:3001/books/${id}`, {
