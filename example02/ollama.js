@@ -1,6 +1,6 @@
-import ollama from 'ollama';
+import ollama from "ollama";
 
-async function sendPrompt(prompt, model = 'llama3.2:1b') {
+async function sendPrompt(prompt, model = "llama3.2:1b") {
   const response = await ollama.generate({
     model,
     prompt,
@@ -9,6 +9,6 @@ async function sendPrompt(prompt, model = 'llama3.2:1b') {
   return response.response;
 }
 
-const prompt = 'What is the capital of the USA?';
+const prompt = "Explain the color red in one sentence.";
 const response = await sendPrompt(prompt);
-console.log('Response from model:', response);
+console.log("Response from model:", response);
