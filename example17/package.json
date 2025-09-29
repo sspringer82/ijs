@@ -1,0 +1,18 @@
+{
+  "name": "example17",
+  "version": "1.0.0",
+  "main": "getAnimalFact.js",
+  "scripts": {
+    "test": "node --no-warnings --experimental-test-module-mocks --test ./*.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "private": true,
+  "description": "",
+  "dependencies": {
+    "@langchain/core": "^0.3.77",
+    "@langchain/ollama": "^0.2.4"
+  }
+}

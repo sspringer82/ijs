@@ -17,7 +17,7 @@ const getAnimalFact = tool(
     name: "getAnimalFact",
     description: "Get a fun fact about a given animal",
     schema: z.object({
-      animal: z.string(),
+      animal: z.string().describe("The type of animal to get a fact about"),
     }),
   }
 );
