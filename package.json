@@ -1,0 +1,21 @@
+{
+  "name": "ijs",
+  "version": "1.0.0",
+  "description": "https://github.com/sspringer82/ijs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sspringer82/ijs.git"
+  },
+  "keywords": [],
+  "author": "Sebastian Springer <info@sebastianspringer.com>",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sspringer82/ijs/issues"
+  },
+  "homepage": "https://github.com/sspringer82/ijs#readme"
+}

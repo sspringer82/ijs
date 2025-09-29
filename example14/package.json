@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@langchain/community": "^0.3.56",
+    "@langchain/core": "^0.3.78",
+    "@langchain/ollama": "^0.2.4",
+    "pdf-parse": "^1.1.1"
+  }
+}

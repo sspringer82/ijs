@@ -16,7 +16,7 @@ const client = new MultiServerMCPClient({
 const tools = await client.getTools();
 
 const model = new ChatOllama({
-  model: "granite3.1-dense",
+  model: "llama3.2",
 });
 
 const agent = createReactAgent({

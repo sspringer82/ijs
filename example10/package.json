@@ -1,0 +1,23 @@
+{
+  "name": "example10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "md.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@langchain/community": "^0.3.56",
+    "@langchain/core": "^0.3.77",
+    "@langchain/ollama": "^0.2.4",
+    "cheerio": "^1.1.2",
+    "langchain": "^0.3.34",
+    "lodash": "^4.17.21",
+    "markdown-to-txt": "^2.0.1",
+    "pdf-parse": "^1.1.1"
+  }
+}
