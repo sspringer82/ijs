@@ -1,0 +1,95 @@
+/* Responsive container for wide tables */
+.table-container {
+  overflow: auto;
+  max-height: 70vh;
+  border: 1px solid #e5e7eb; /* slate-200 */
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+/* Base table styling */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.data-table th,
+.data-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #e5e7eb; /* row separators */
+  text-align: left;
+  vertical-align: middle;
+  white-space: nowrap; /* keep cells compact; horizontal scroll will handle overflow */
+}
+
+/* Sticky header for better scanning */
+.data-table thead th {
+  position: sticky;
+  top: 0;
+  background: #f8fafc; /* slate-50 */
+  z-index: 1;
+  font-weight: 600;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+/* Zebra striping and hover states */
+.data-table tbody tr:nth-child(even) {
+  background: #f9fafb; /* light stripe */
+}
+
+.data-table tbody tr:hover {
+  background: #eef2ff; /* subtle indigo hover */
+}
+
+/* Links inside cells */
+.data-table a {
+  color: #2563eb; /* blue-600 */
+  text-decoration: none;
+}
+
+.data-table a:hover {
+  text-decoration: underline;
+}
+
+/* Avatar images */
+.data-table .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  .table-container {
+    border-color: #334155; /* slate-600 */
+    background: #0b1220;
+    box-shadow: none;
+  }
+
+  .data-table th,
+  .data-table td {
+    border-bottom-color: #334155;
+    color: inherit;
+  }
+
+  .data-table thead th {
+    background: #0f172a; /* slate-900 */
+    border-bottom-color: #334155;
+  }
+
+  .data-table tbody tr:nth-child(even) {
+    background: rgba(148, 163, 184, 0.08);
+  }
+
+  .data-table tbody tr:hover {
+    background: rgba(99, 102, 241, 0.18);
+  }
+
+  .data-table a {
+    color: #60a5fa; /* blue-400 */
+  }
+}
