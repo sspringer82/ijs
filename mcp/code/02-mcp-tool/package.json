@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.2"
+  },
+  "name": "02-mcp-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node client.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}

@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@langchain/mcp-adapters": "^1.0.0",
+    "@langchain/ollama": "^1.0.0",
+    "@modelcontextprotocol/sdk": "^1.20.2",
+    "express": "^5.1.0",
+    "langchain": "^1.0.1"
+  },
+  "name": "02-mcp-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node client.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
